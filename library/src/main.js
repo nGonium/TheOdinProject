@@ -9,6 +9,7 @@ function Book(title, author, numPages, isRead) {
     `${title} by ${author}, ${numPages} pages, ${isRead ? "read" : "not read yet"} read`
 }
 
-function addBookToLibrary() {
-  
+function addBookToLibrary(title, author, numPages, isRead) {
+  const newBook = new Book(title, author, numPages, isRead)
+  myLibrary.push(newBook)
 }
