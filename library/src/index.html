@@ -12,5 +12,33 @@
     <div id="book-container">
         
     </div>
+    <button id="open-new-book-form-button">New Book</button>
+    <form class="new-book-form hidden" name="new-book" id="new-book-form">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title">
+
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author">
+
+        <label for="pages">Pages</label>
+        <input type="number" name="pages" id="pages">
+
+        <span>Read?</span>
+        <label for="is-read-yes">
+            <input type="radio" name="is-read" value="yes" id="is-read-yes">
+            Yes
+        </label>
+
+        <label for="is-read-no">
+            <input checked type="radio" name="is-read" value="no" id="is-read-no">
+            No
+        </label>
+        
+        <div>
+            <button type="submit">Add book</button>
+            <button id="close-new-book-form-button">Close form</button>
+        </div>
+        
+    </form>
 </body>
 </html>
